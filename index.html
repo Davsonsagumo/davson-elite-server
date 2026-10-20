@@ -1,87 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-/* DAVSON ELITE PREMIUM PAYMENT DESIGN */
-#payments {
-  background: linear-gradient(135deg, #080808, #1b1b1b);
-  padding: 35px 18px;
-  border: 1px solid #d4af37;
-  border-radius: 18px;
-  margin: 25px auto;
-  color: #ffffff;
-}
-
-#payments h2 {
-  color: #f5c542;
-  text-align: center;
-  font-size: 27px;
-  letter-spacing: 1px;
-}
-
-#payments > p {
-  text-align: center;
-  color: #dddddd;
-}
-
-#payments .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-#payments .card {
-  background: linear-gradient(145deg, #202020, #090909);
-  border: 1px solid #d4af37;
-  border-radius: 16px;
-  padding: 24px 18px;
-  max-width: 320px;
-  width: 100%;
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
-  text-align: center;
-}
-
-#payments .card h3 {
-  color: #f5c542;
-  font-size: 21px;
-}
-
-#payments .card h2 {
-  color: #ffffff;
-  overflow-wrap: anywhere;
-}
-
-#payments .button {
-  display: inline-block;
-  background: linear-gradient(90deg, #d4af37, #ffe28a);
-  color: #111111;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 12px;
-}
-
-#payments .button:hover {
-  transform: translateY(-2px);
-}
-</style>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="DAVSON ELITE SERVER - Premium VPN, VPS and eSIM services. One Team, One Goal.">
 <title>DAVSON ELITE SERVER</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#07111f;color:#fff}
-  <div class="davson-marquee">
-  <div class="davson-marquee-text">
-    🇹🇿 DAVSON ELITE SERVER ✦ ONE TEAM, ONE GOAL ✦
-    VPN SERVICES ✦ VPS SERVICES ✦ eSIM SERVICES ✦
-    DIGITAL PAYMENTS AVAILABLE ✦ BINANCE PAY ✦ M-PESA ✦
-  </div>
-</div>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 35px 15px;
+  background: linear-gradient(135deg, #064e3b, #07111f);
+  border-bottom: 2px solid #f5c542;
+}
+
+.logo {
+  font-size: 45px;
+}
+
+header h1 {
+  color: #f5c542;
+  margin: 8px 0;
+}
+
+header p {
+  margin: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 18px 10px;
+  background: #101e30;
+}
+
+nav a {
+  color: #f5c542;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* MOVING PREMIUM MARQUEE */
 .davson-marquee {
   width: 100%;
   overflow: hidden;
@@ -106,116 +89,285 @@ body{margin:0;font-family:Arial,sans-serif;background:#07111f;color:#fff}
 }
 
 @keyframes davsonScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 18px;
+  background: radial-gradient(ellipse at top, #12352f, #07111f 70%);
+}
+
+.hero h2 {
+  font-size: 30px;
+  color: #f5c542;
+}
+
+.hero p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 20px;
+  margin: 8px;
+  background: linear-gradient(90deg, #d4af37, #ffe28a);
+  color: #07111f;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.services {
+  text-align: center;
+  padding: 35px 15px;
+}
+
+.services > h2 {
+  color: #f5c542;
+  font-size: 27px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  max-width: 950px;
+  margin: 25px auto;
+}
+
+.card {
+  background: linear-gradient(145deg, #162b43, #0b1728);
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #30445c;
+  overflow-wrap: anywhere;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #f5c542;
+}
+
+.card p {
+  color: #d5deea;
+}
+
+/* OWNER */
+#about-owner .card {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.owner-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f5c542;
+}
+
+/* PREMIUM PAYMENT DESIGN */
+#payments {
+  background: linear-gradient(135deg, #080808, #1b1b1b);
+  padding: 35px 18px;
+  border: 1px solid #d4af37;
+  border-radius: 18px;
+  margin: 25px auto;
+  color: #ffffff;
+  max-width: 1100px;
+}
+
+#payments > h2 {
+  color: #f5c542;
+  text-align: center;
+  font-size: 27px;
+}
+
+#payments > p {
+  text-align: center;
+  color: #dddddd;
+}
+
+#payments .card {
+  background: linear-gradient(145deg, #202020, #090909);
+  border-color: #d4af37;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+  text-align: center;
+}
+
+#payments .card h3 {
+  color: #f5c542;
+  font-size: 21px;
+}
+
+#payments .card h2 {
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  background: #040a12;
+  padding: 30px 15px;
+  line-height: 2;
+  border-top: 2px solid #f5c542;
+}
+
+footer h2 {
+  color: #f5c542;
+}
+
+footer a {
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 600px) {
+  .logo {
+    font-size: 38px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+
   .davson-marquee-text {
     font-size: 15px;
     letter-spacing: 1px;
   }
+
+  .services {
+    padding: 25px 12px;
+  }
 }
 </style>
-header{text-align:center;padding:35px 15px;background:linear-gradient(135deg,#064e3b,#07111f)}
-.logo{font-size:45px}
-h1{color:#f5c542}
-nav{text-align:center;padding:18px;background:#101e30}
-nav a{color:#f5c542;text-decoration:none;margin:10px;font-weight:bold}
-.hero{text-align:center;padding:60px 18px}
-.hero h2{font-size:30px;color:#f5c542}
-.hero p{color:#cbd5e1;line-height:1.8}
-.button{display:inline-block;padding:14px 20px;margin:10px;background:#f5c542;color:#07111f;text-decoration:none;border-radius:8px;font-weight:bold}
-.services{text-align:center;padding:30px 15px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:950px;margin:25px auto}
-.card{background:#122239;padding:25px;border-radius:14px;border:1px solid #30445c}
-.card h3{color:#f5c542}
-  <section class="services" id="about-owner">
-<h2>👑 ABOUT THE OWNER</h2>
-<div class="card">
-<img src="20240911_091626.jpg" alt="Davson - Owner of Davson Elite Server" style="width:180px;height:180px;object-fit:cover;border-radius:50%;border:3px solid #f5c542;">
-<h3>DAVSON</h3>
-<p>Founder & Owner of DAVSON ELITE SERVER.</p>
-<p>🇹🇿 Arusha, Tanzania</p>
-<p>ONE TEAM, ONE GOAL</p>
-</div>
-</section>
-footer{text-align:center;background:#040a12;padding:30px 15px;line-height:2}
-</style>
 </head>
+
 <body>
-<header>
-<div class="logo">👑 🇹🇿</div>
-<h1>DAVSON ELITE SERVER</h1>
-<p>ONE TEAM, ONE GOAL</p>
+
+<header id="home">
+  <div class="logo">👑 🇹🇿</div>
+  <h1>DAVSON ELITE SERVER</h1>
+  <p>ONE TEAM, ONE GOAL</p>
 </header>
+
+<div class="davson-marquee">
+  <div class="davson-marquee-text">
+    🇹🇿 DAVSON ELITE SERVER ✦ ONE TEAM, ONE GOAL ✦
+    VPN SERVICES ✦ VPS SERVICES ✦ eSIM SERVICES ✦
+    DIGITAL PAYMENTS AVAILABLE ✦ BINANCE PAY ✦ M-PESA ✦
+  </div>
+</div>
+
 <nav>
-<a href="#home">HOME</a>
-<a href="#services">SERVICES</a>
-<a href="#contact">CONTACT</a>
+  <a href="#home">HOME</a>
+  <a href="#services">SERVICES</a>
+  <a href="#packages">PACKAGES</a>
+  <a href="#about-owner">OWNER</a>
+  <a href="#payments">PAYMENTS</a>
+  <a href="#contact">CONTACT</a>
 </nav>
-<section class="hero" id="home">
-<h2>WELCOME TO DAVSON ELITE SERVER</h2>
-<p>Premium Digital Services & Connectivity Solutions.<br>Karibu kwenye huduma zetu za kidijitali!</p>
-<a class="button" href="#services">OUR SERVICES</a>
-<a class="button" href="https://wa.me/255752796337">CONTACT US</a>
+
+<section class="hero">
+  <h2>WELCOME TO DAVSON ELITE SERVER</h2>
+  <p>
+    Premium Digital Services &amp; Connectivity Solutions.<br>
+    Karibu kwenye huduma zetu za kidijitali!
+  </p>
+  <a class="button" href="#services">OUR SERVICES</a>
+  <a class="button" href="https://wa.me/255752796337">CONTACT US</a>
 </section>
+
 <section class="services" id="services">
-<h2>OUR SERVICES</h2>
-<div class="cards">
-<div class="card">
-<h3>🌐 VPN SERVICES</h3>
-<p>VPN solutions and connectivity support.</p>
-</div>
-<div class="card">
-<h3>🖥️ VPS SERVICES</h3>
-<p>Reliable virtual private server solutions.</p>
-</div>
-<div class="card">
-<h3>📱 eSIM SERVICES</h3>
-<p>eSIM options and setup assistance.</p>
-</div>
-</div>
-</section> 
-  <section class="services" id="packages">
-<h2>💎 PACKAGES & PRICES</h2>
-<div class="cards">
-<div class="card">
-<h3>🌐 VPN PACKAGES</h3>
-<p>Fast and reliable VPN connectivity.</p>
-<p>Flexible packages available.</p>
-<p>Contact us for current prices.</p>
-<a class="button" href="https://wa.me/255752796337?text=Hello%20Davson%20Elite%2C%20I%20want%20to%20know%20your%20VPN%20packages%20and%20prices." target="_blank" rel="noopener noreferrer">GET VPN PRICE</a>
-</div>
-<div class="card">
-<h3>🖥️ VPS PACKAGES</h3>
-<p>Reliable Virtual Private Servers.</p>
-<p>Different server options available.</p>
-<p>Contact us for current prices.</p>
-<a class="button" href="https://wa.me/255752796337?text=Hello%20Davson%20Elite%2C%20I%20want%20to%20know%20your%20VPS%20packages%20and%20prices." target="_blank" rel="noopener noreferrer">GET VPS PRICE</a>
-</div>
-<div class="card">
-<h3>📱 eSIM PACKAGES</h3>
-<p>International eSIM data solutions.</p>
-<p>Options depend on destination.</p>
-<p>Contact us for current prices.</p>
-<a class="button" href="https://wa.me/255752796337?text=Hello%20Davson%20Elite%2C%20I%20want%20to%20know%20your%20eSIM%20packages%20and%20prices." target="_blank" rel="noopener noreferrer">GET eSIM PRICE</a>
-</div>
-</div>
+  <h2>OUR SERVICES</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🌐 VPN SERVICES</h3>
+      <p>VPN solutions and connectivity support.</p>
+    </div>
+
+    <div class="card">
+      <h3>🖥️ VPS SERVICES</h3>
+      <p>Reliable virtual private server solutions.</p>
+    </div>
+
+    <div class="card">
+      <h3>📱 eSIM SERVICES</h3>
+      <p>eSIM options and setup assistance.</p>
+    </div>
+  </div>
 </section>
-  <section class="services" id="about-owner">
-<h2>👑 ABOUT THE OWNER</h2>
-<div class="cards">
-<div class="card">
-<img src="20240911_091626.jpg" alt="Davson, owner of DAVSON ELITE SERVER" style="width:180px;height:180px;object-fit:cover;border-radius:50%;border:3px solid #f5c542;">
-<h3>DAVSON</h3>
-<p>Founder &amp; Owner of DAVSON ELITE SERVER.</p>
-<p>🇹🇿 Arusha, Tanzania</p>
-<p>ONE TEAM, ONE GOAL</p>
-</div>
-</div>
+
+<section class="services" id="packages">
+  <h2>💎 PACKAGES &amp; PRICES</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🌐 VPN PACKAGES</h3>
+      <p>Fast and reliable VPN connectivity.</p>
+      <p>Flexible packages available.</p>
+      <p>Contact us for current prices.</p>
+      <a class="button"
+         href="https://wa.me/255752796337?text=Hello%20Davson%20Elite%2C%20I%20want%20to%20know%20your%20VPN%20packages%20and%20prices."
+         target="_blank" rel="noopener noreferrer">GET VPN PRICE</a>
+    </div>
+
+    <div class="card">
+      <h3>🖥️ VPS PACKAGES</h3>
+      <p>Reliable Virtual Private Servers.</p>
+      <p>Different server options available.</p>
+      <p>Contact us for current prices.</p>
+      <a class="button"
+         href="https://wa.me/255752796337?text=Hello%20Davson%20Elite%2C%20I%20want%20to%20know%20your%20VPS%20packages%20and%20prices."
+         target="_blank" rel="noopener noreferrer">GET VPS PRICE</a>
+    </div>
+
+    <div class="card">
+      <h3>📱 eSIM PACKAGES</h3>
+      <p>International eSIM data solutions.</p>
+      <p>Options depend on destination.</p>
+      <p>Contact us for current prices.</p>
+      <a class="button"
+         href="https://wa.me/255752796337?text=Hello%20Davson%20Elite%2C%20I%20want%20to%20know%20your%20eSIM%20packages%20and%20prices."
+         target="_blank" rel="noopener noreferrer">GET eSIM PRICE</a>
+    </div>
+  </div>
 </section>
-  <section class="services" id="payments">
+
+<section class="services" id="about-owner">
+  <h2>👑 ABOUT THE OWNER</h2>
+  <div class="cards">
+    <div class="card">
+      <img class="owner-photo"
+           src="20240911_091626.jpg"
+           alt="Davson, owner of DAVSON ELITE SERVER">
+      <h3>DAVSON</h3>
+      <p>Founder &amp; Owner of DAVSON ELITE SERVER.</p>
+      <p>🇹🇿 Arusha, Tanzania</p>
+      <p>ONE TEAM, ONE GOAL</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="payments">
   <h2>💳 DIGITAL PAYMENT METHODS</h2>
   <p>Secure and convenient payment options.</p>
 
@@ -233,20 +385,23 @@ footer{text-align:center;background:#040a12;padding:30px 15px;line-height:2}
       <p>Contact us on WhatsApp for M-Pesa payment details.</p>
       <a class="button"
          href="https://wa.me/255752796337?text=Hello%20Davson%20Elite%2C%20I%20want%20to%20pay%20via%20M-Pesa."
-         target="_blank"
-         rel="noopener noreferrer">
-        PAY WITH M-PESA
-      </a>
+         target="_blank" rel="noopener noreferrer">PAY WITH M-PESA</a>
     </div>
   </div>
 </section>
+
 <footer id="contact">
-<h2>CONTACT DAVSON ELITE</h2>
-<p>📍 Arusha, Tanzania 🇹🇿 — Services available anywhere.</p>
-<p>📧 eliasdavson@gmail.com</p>
-<p>📱 WhatsApp: +255752796337</p>
-<a class="button" href="https://wa.me/255752796337?text=Hello%20Davson%20Elite%2C%20I%20am%20interested%20in%20your%20services.%20Please%20share%20more%20information." target="_blank" rel="noopener noreferrer">CHAT ON WHATSAPP</a>
-<p>© 2026 DAVSON ELITE SERVER. All rights reserved.</p>
+  <h2>CONTACT DAVSON ELITE</h2>
+  <p>📍 Arusha, Tanzania 🇹🇿 — Services available anywhere.</p>
+  <p>📧 <a href="mailto:eliasdavson@gmail.com">eliasdavson@gmail.com</a></p>
+  <p>📱 WhatsApp: +255752796337</p>
+
+  <a class="button"
+     href="https://wa.me/255752796337?text=Hello%20Davson%20Elite%2C%20I%20am%20interested%20in%20your%20services.%20Please%20share%20more%20information."
+     target="_blank" rel="noopener noreferrer">CHAT ON WHATSAPP</a>
+
+  <p>© 2026 DAVSON ELITE SERVER. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
