@@ -73,6 +73,50 @@
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:#07111f;color:#fff}
+  <div class="davson-marquee">
+  <div class="davson-marquee-text">
+    🇹🇿 DAVSON ELITE SERVER ✦ ONE TEAM, ONE GOAL ✦
+    VPN SERVICES ✦ VPS SERVICES ✦ eSIM SERVICES ✦
+    DIGITAL PAYMENTS AVAILABLE ✦ BINANCE PAY ✦ M-PESA ✦
+  </div>
+</div>
+
+<style>
+.davson-marquee {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, #050505, #242424, #050505);
+  border-top: 2px solid #f5c542;
+  border-bottom: 2px solid #f5c542;
+  padding: 14px 0;
+  white-space: nowrap;
+}
+
+.davson-marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  color: #f5c542;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #7a5a00,
+               4px 4px 0 #332500,
+               0 0 12px rgba(245, 197, 66, 0.8);
+  animation: davsonScroll 22s linear infinite;
+}
+
+@keyframes davsonScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@media (max-width: 600px) {
+  .davson-marquee-text {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+</style>
 header{text-align:center;padding:35px 15px;background:linear-gradient(135deg,#064e3b,#07111f)}
 .logo{font-size:45px}
 h1{color:#f5c542}
